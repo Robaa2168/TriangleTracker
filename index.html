@@ -20,6 +20,7 @@
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
+      <div class="panel-group">
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h1>Triangle Tracker</h1>
@@ -41,7 +42,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <label for="lengthc" class="control-label col-sm-4">Length A:</label>
+                  <label for="lengthc" class="control-label col-sm-4">Length C:</label>
                     <div class="col-sm-4">
                       <input type="number" id="lengthc" value="" class="form-control" placeholder="Length C">
                     </div>
@@ -51,23 +52,19 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                   </div>
                 </div>
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead>
-                      <th>Results</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <span class="output"></span>
-                      </tr>
-                    </tbody>
-                </table>
-                </div>
               </form>
             </div>
-
           </div>
         </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+          <h1>Results</h1>
+        </div>
+          <div class="panelbody">
+            <span class="output"></span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

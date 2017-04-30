@@ -33,9 +33,16 @@
     .sidenav a {font-size: 18px;}
 }
 p{
-  font-size: 50px;
+  font-size: 30px;
   color: grey;
 }
-h1,h4{
+h1,h2,h4{
   text-align: center;
+}
+.panelbody{
+  text-align: center;
+}
+.output{
+  font-size: 50px;
+  font-weight: bold;
 }

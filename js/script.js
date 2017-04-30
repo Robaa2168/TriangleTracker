@@ -1,39 +1,36 @@
 $(document).ready(function() {
-      $("form").submit(function(event) {
+      $(".user form").submit(function(event) {
         var a = parseInt($("input#lengtha").val());
         var b = parseInt($("input#lengthb").val());
         var c = parseInt($("input#lengthc").val());
-        var results="";
-
+        var result="";
 
 
       if(c> a+b || b>a+c || a>b+c){
-        results = "Not a Triangle";
+        result = "Not a Triangle";
       }else {
         if(a===b && a===c){
-          results = "Equilateral";
+          result = "Equilateral";
         }else {
           if(a===b || a===c || b===c ){
-          results = "Isosceles";
+          result = "Isosceles";
         }
         else {
           if(a!=b && a!=c){
-             results = "Scalene";
+             result = "Scalene";
           }
         }
       }
       }
-        $(".output").text(results);
+        $(".output").text(result);
         event.preventDefault();
       });
-
+});
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-});
