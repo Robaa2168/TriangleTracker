@@ -1,4 +1,6 @@
 # Triangle Tracker
+![Ping-Pong](https://s3-ap-southeast-1.amazonaws.com/learnhive/lcards/Types-of-Triangles-521dd275368b9.png)
+
 Make a web page that allows the user to input the lengths of the sides of a triangle, and returns whether these sides form an equilateral, isosceles, or scalene triangle or if the sides cannot make a triangle at all.
 
 ## Purpose of Project
