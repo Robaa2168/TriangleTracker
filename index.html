@@ -13,14 +13,13 @@
   <body>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <p>Created by Joyce Ngamau</p>
+      <p>Created by <br>Joyce Ngamau</p>
     </div>
 <!-- Use any element to open the sidenav -->
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; About</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
-      <div class="container-fluid">
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h1>Triangle Tracker</h1>
@@ -31,19 +30,19 @@
               <form class="form-horizontal" action="index.html" method="post">
                 <div class="form-group">
                   <label for="lengtha" class="control-label col-sm-4">Length A:</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                       <input type="number" id="lengtha" value="" class="form-control" placeholder="Length A">
                     </div>
                 </div>
                 <div class="form-group">
                   <label for="lengthb" class="control-label col-sm-4">Length B:</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                       <input type="number" id="lengthb" value="" class="form-control" placeholder="Length B">
                     </div>
                 </div>
                 <div class="form-group">
                   <label for="lengthc" class="control-label col-sm-4">Length A:</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                       <input type="number" id="lengthc" value="" class="form-control" placeholder="Length C">
                     </div>
                 </div>
@@ -52,11 +51,23 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                   </div>
                 </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <th>Results</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <span class="output"></span>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
               </form>
             </div>
+
           </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
